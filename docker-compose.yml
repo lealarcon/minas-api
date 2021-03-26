@@ -1,0 +1,12 @@
+version: '2'
+services:
+  wirid-lab:
+    container_name: min-api
+    image: 'lealarcon/min-api:1.0.0'
+    stdin_open: true
+    tty: true
+    privileged: true
+    ports:
+      - "3000:3000"
+    command: npm start
+    restart: always
